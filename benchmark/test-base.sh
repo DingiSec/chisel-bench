@@ -23,7 +23,7 @@ function compile() {
   return 0
 }
 
-sanitizers=("-fsanitize=cfi -flto -fvisibility=hidden" "-fsanitize=address"
+sanitizers=("-fsanitize=cfi -flto -fvisibility=hidden -fuse-ld=lld" "-fsanitize=address"
   "-fsanitize=memory -fsanitize-memory-use-after-dtor"
   "-fno-sanitize-recover=undefined,nullability"
   "-fsanitize=leak")
